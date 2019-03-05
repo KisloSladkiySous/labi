@@ -1,0 +1,5 @@
+s='Витя, Лимон, Лиза, МТУСИ, Лицо'
+mas=s.split(', ')
+for str in mas:
+    if ((str[0]=='Л') and (str [1]=='и')):
+        print(str.strip())
