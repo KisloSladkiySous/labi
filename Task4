@@ -1,0 +1,17 @@
+
+str=[]
+N=int(input())
+i=0
+while i<N:
+    a=int(input())
+    if a % 2==0:
+        del a
+    else:
+        str.append(a)
+    i+=1
+
+new1=int(input('Введите новый элемент:' ))
+str.append(new1)
+new2=int(input('Введите новый элемент:' ))
+str.append(new2)
+print(str)
