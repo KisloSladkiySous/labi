@@ -1,17 +1,18 @@
 import random
-koll=0;
 print ("Введите границы промежутка для угадывания числа")
 print ("Левая граница")
 x = int(input())
 print ("Правая граница")
 y = int(input())
-n = random.randint(x,y)
-m = int(input())
-while m!=n:
- if m<x or m>y:
-  print("Введенное число вне границ")
-  koll=koll-1
- m = int(input())
- koll=koll+1
-else:
-    print("Мои поздравления,загаданное мною число=",n,"Количество попыток",koll)
+number = random.randint(x, y)
+igra = False
+while igra == False:
+    predict = int(input('Введите ваше число: '))
+    if predict == number:
+        print('Поздравляю! Вы выиграли!')
+        fortune = True
+    else:
+        if predict > number:
+            print('Загаданное число меньше!')
+        else:
+            print('Загаданное число больше!')
